@@ -1,0 +1,17 @@
+.env
+.env.*.local
+.cache
+.spotify_cache
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# User data and machine-local outputs
+anghami_export.json
+unmatched_songs.json
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

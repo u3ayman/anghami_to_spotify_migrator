@@ -36,15 +36,17 @@ pip install -r requirements.txt
 
 ### 3. (Optional) Save credentials to a `.env` file
 
-Create a `.env` file in this folder:
+Copy `.env.example` to `.env` and fill in your own values:
 
 ```
-SPOTIFY_CLIENT_ID=your_client_id_here
-SPOTIFY_CLIENT_SECRET=your_client_secret_here
+SPOTIFY_CLIENT_ID=your_spotify_client_id
+SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
 SPOTIFY_REDIRECT_URI=http://127.0.0.1:8888/callback
 ```
 
-Or just run the tool — it will ask you to enter them.
+`.env` is intentionally ignored by git and should never be committed to a public repo.
+
+Or just run the tool - it will ask you to enter them.
 
 ---
 
@@ -127,6 +129,8 @@ If you want to create the export file manually (or edit it), use this format:
 | `anghami_export.json` | Your exported Anghami data (songs + playlists) |
 | `unmatched_songs.json` | Songs that couldn't be found on Spotify |
 | `.env` | Your Spotify credentials (if you chose to save) |
+
+These files are local-only and should stay out of version control.
 
 ---
 
